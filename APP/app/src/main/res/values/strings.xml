@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">暖通空调设备选型</string>
+    <string name="Headline">暖通空调设备选型</string>
+    <string name="inputHeadline">请输入参数</string>
+    <string name="city">城市</string>
+    <string name="cityPrompt">请选择城市</string>
+    <string-array name="locations">
+        <item>长沙市</item>
+        <item>重庆市</item>
+        <item>广州市</item>
+        <item>上海市</item>
+        <item>武汉市</item>
+    </string-array>
+    <string name="houseType">户型</string>
+    <string name="houseTypePrompt">请选择户型</string>
+    <string-array name="houseType">
+        <item>一室一厅</item>
+        <item>二室一厅</item>
+        <item>三室二厅</item>
+        <item>四室二厅</item>
+    </string-array>
+    <string name="floor">楼层</string>
+    <string name="floorPrompt">请选择楼层</string>
+    <string-array name="floor">
+        <item>底层</item>
+        <item>中间层</item>
+        <item>顶层</item>
+    </string-array>
+    <string name="window">窗户</string>
+    <string name="windowPrompt">请选择窗户类型</string>
+    <string-array name="window">
+        <item>标准窗</item>
+        <item>落地窗</item>
+    </string-array>
+    <string name="direction">朝向</string>
+    <string name="directionPrompt">请选择朝向</string>
+    <string-array name="direction">
+        <item>东侧</item>
+        <item>中间</item>
+        <item>西侧</item>
+    </string-array>
+    <string name="room">房间</string>
+    <string name="roomPrompt">请选择房间</string>
+    <string-array name="room">
+        <item>客厅</item>
+        <item>卧室</item>
+        <item>卧室1</item>
+        <item>卧室2</item>
+        <item>卧室3</item>
+        <item>卧室4</item>
+    </string-array>
+    <string-array name="room1">
+        <item>客厅</item>
+        <item>卧室</item>
+    </string-array>
+    <string-array name="room2">
+        <item>客厅</item>
+        <item>卧室1</item>
+        <item>卧室2</item>
+    </string-array>
+    <string-array name="room3">
+        <item>客厅</item>
+        <item>卧室1</item>
+        <item>卧室2</item>
+        <item>卧室3</item>
+    </string-array>
+    <string-array name="room4">
+        <item>客厅</item>
+        <item>卧室1</item>
+        <item>卧室2</item>
+        <item>卧室3</item>
+        <item>卧室4</item>
+    </string-array>
+    <string name="orientation">朝向</string>
+    <string-array name="orientation">
+        <item>朝南</item>
+        <item>朝北</item>
+    </string-array>
+    <string name="area">房间面积/(m²)</string>
+    <string name="areaHint">请输入房间面积</string>
+    <string name="button">确定</string>
+    <string name="outputHeadline">选型结果如下</string>
+    <string name="output1.1">供热负荷</string>
+    <string name="output1.2">%1$d W</string>
+    <string name="output2.1">制冷负荷</string>
+    <string name="output2.2">%1$d W</string>
+    <string name="info">Developed by: DJZ</string>
+    <string name="HNU">http://ce.hnu.edu.cn/</string>
+</resources>

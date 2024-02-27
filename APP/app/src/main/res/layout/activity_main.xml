@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        tools:context=".MainActivity">
+
+        <!--标题-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/Headline"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/Headline"-->
+        <!--            android:textSize="30sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--图片-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/image"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="260dp"-->
+        <!--            android:layout_below="@id/Headline"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            android:foregroundGravity="center_horizontal"-->
+        <!--            android:src="@drawable/pic3" />-->
+
+        <!--分割线1-->
+        <TextView
+            android:id="@+id/inputHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:shadowColor="#cccccc"
+            android:shadowDx="10.0"
+            android:shadowDy="10.0"
+            android:shadowRadius="3.0"
+            android:text="@string/inputHeadline"
+            android:textColor="@color/classicBlue"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/inputHeadline"
+            android:background="@color/lightGray" />
+
+        <LinearLayout
+            android:id="@+id/bigLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/city" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/city"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:entries="@array/locations"
+                    android:prompt="@string/cityPrompt"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+            <!--2-户型-->
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/house" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/houseType"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:prompt="@string/houseTypePrompt"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/houseTypeImage"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:layout_below="@id/layout2"-->
+        <!--            android:layout_marginStart="75dp"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            android:background="@drawable/shape"-->
+        <!--            android:foregroundGravity="right"-->
+        <!--            android:src="@drawable/house1" />-->
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bigLayout1"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="370dp"
+            android:maxHeight="235dp"
+            android:src="@drawable/house1" />
+
+        <LinearLayout
+            android:id="@+id/bigLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+            <!--4-方向-->
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/floor" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/floor"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:entries="@array/floor"
+                    android:prompt="@string/floorPrompt"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/compass" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/direction"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:entries="@array/direction"
+                    android:prompt="@string/directionPrompt"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+            <!--5-房间-->
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/room" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/room"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <Spinner
+                    android:id="@+id/spinner5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:prompt="@string/roomPrompt"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+            <!--6-窗户-->
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/window" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/window"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <Spinner
+                    android:id="@+id/spinner6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:entries="@array/window"
+                    android:prompt="@string/windowPrompt"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+            <!--面积-->
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/area" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/area"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGray" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:autofillHints=""
+                    android:hint="@string/areaHint"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray" />
+        </LinearLayout>
+
+        <!--选型结果-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bigLayout2"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/classicBlue"
+            android:text="@string/button" />
+
+        <TextView
+            android:id="@+id/outputHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:shadowColor="#cccccc"
+            android:shadowDx="10.0"
+            android:shadowDy="10.0"
+            android:shadowRadius="3.0"
+            android:text="@string/outputHeadline"
+            android:textColor="@color/classicBlue"
+            android:textSize="25sp" />
+
+        <!--分割线2-->
+        <View
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/outputHeadline"
+            android:background="@color/lightGray" />
+
+        <LinearLayout
+            android:id="@+id/layout9"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/line2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/heat" />
+
+            <TextView
+                android:id="@+id/output1_1"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/output1.1"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/lightGray" />
+
+            <TextView
+                android:id="@+id/output1_2"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/layout9"
+            android:background="@color/lightGray" />
+        <!--第二个参数-->
+        <LinearLayout
+            android:id="@+id/layout10"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/line3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/cooling" />
+
+            <TextView
+                android:id="@+id/output2_1"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/output2.1"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/lightGray" />
+
+            <TextView
+                android:id="@+id/output2_2"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottomLine"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/layout10"
+            android:background="@color/lightGray" />
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomLine"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/info"
+            android:textColor="@color/lightGray" />
+
+ <!--       <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info1"
+            android:layout_centerInParent="true"
+            android:text="@string/HNU"
+            android:textColorLink="@color/classicBlue"
+            android:autoLink="web"/>-->
+        <!--测试用，显示输入的数据
+            <TextView
+            android:id="@+id/output2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_below="@id/layout3"/>
+        <TextView
+            android:id="@+id/output3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_below="@id/output2"/>-->
+
+    </RelativeLayout>
+</ScrollView>

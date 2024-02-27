@@ -1,0 +1,28 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable-anydpi/city.xml" value="0.1635" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable-anydpi/hvac.xml" value="0.1635" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable/icon_background.xml" value="0.167" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable/roundedpic.xml" value="0.1635" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable/shape.xml" value="0.1635" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/drawable/shape2.xml" value="0.1635" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/layout/activity_main.xml" value="0.26621847886098404" />
+        <entry key="..\:/Schoolwork/Android/APP/app/src/main/res/mipmap-anydpi-v26/icon.xml" value="0.167" />
+        <entry key="..\:/Schoolwork/Android/Projects/AppforHVACSelection/app/src/main/res/drawable/image1.xml" value="0.179" />
+        <entry key="..\:/Schoolwork/Android/Projects/AppforHVACSelection/app/src/main/res/layout/activity_main.xml" value="0.20168066580377575" />
+        <entry key="..\:/Schoolwork/Android/Push/Push/app_for_building_-hvac_equipment_selection/UI layout/app/src/main/res/layout/activity_main.xml" value="0.182518115942029" />
+        <entry key="..\:/sites/git_code/app_for_building_-hvac_equipment_selection/UI layout/app/src/main/res/layout/activity_main.xml" value="0.12132725430597771" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
